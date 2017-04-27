@@ -2,6 +2,8 @@ import DS from 'ember-data';
 const { attr, hasMany } = DS;
 
 export default DS.Model.extend({
-  title: attr('string', { defaultValue: 'No default title yet' }),
-  plays: hasMany('play')
+  slug: attr('string'),
+  title: attr('string'),
+  plays: hasMany('play'),
+  artists: hasMany('artist')
 });
