@@ -1,0 +1,9 @@
+<h2>Plays</h2>
+
+<ul>
+  {{#each model as |play|}}
+    <li>{{play.id}} {{play.playedAt}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}
